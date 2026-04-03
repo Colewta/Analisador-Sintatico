@@ -5,10 +5,6 @@ import re
 app = Flask(__name__)
 CORS(app)
 
-# =========================
-# DEFINIÇÃO DOS TOKENS
-# =========================
-
 token_specification = [
     ('INT', r'\bint\b'),
     ('FLOAT', r'\bfloat\b'),
@@ -32,10 +28,6 @@ token_specification = [
 ]
 
 token_regex = '|'.join(f'(?P<{name}>{regex})' for name, regex in token_specification)
-
-# =========================
-# ANALISADOR
-# =========================
 
 def analisar(codigo):
     tokens = []
@@ -73,10 +65,6 @@ def analisar(codigo):
         coluna += len(valor)
 
     return tokens
-
-# =========================
-# ROTA
-# =========================
 
 @app.route('/analisar', methods=['POST'])
 def analisar_rota():
