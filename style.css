@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background: #252526;
+    color: #dcdcdc;
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0B57A8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.resultado {
+    background: #252526;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.token {
+    padding: 5px;
+    border-bottom: 1px solid #333;
+}
+
+.INT { color: #569cd6; }
+.FLOAT { color: #569cd6; }
+.IF, .ELSE, .WHILE { color: #c586c0; }
+.ID { color: #9cdcfe; }
+.NUM { color: #b5cea8; }
+.OP { color: #d4d4d4; }
+.ERRO { color: red; }

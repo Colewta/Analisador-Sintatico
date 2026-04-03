@@ -3,24 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Analisador Sintático</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Analisador Léxico</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h2>Analisador Sintático</h2>
-        <textarea
-            id="entrada"
-            placeholder="Ex: int x;
-    float y;"
-        ></textarea>
+
+        <h1>Analisador Léxico</h1>
+
+        <textarea id="codigo" placeholder="Digite seu código aqui..."></textarea>
+
         <button onclick="analisar()">Analisar</button>
+
         <div class="resultado" id="resultado"></div>
+
     </div>
 
-    <script src="./index.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
